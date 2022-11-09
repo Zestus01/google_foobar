@@ -2,6 +2,11 @@ As a henchman on Commander Lambda's space station, you're expected to be resourc
 
 To help yourself get to and from your bunk every day, write a function called solution(src, dest) which takes in two parameters: the source square, on which you start, and the destination square, which is where you need to land to solve the puzzle.  The function should return an integer representing the smallest number of moves it will take for you to travel from the source square to the destination square using a chess knight's moves (that is, two squares in any direction immediately followed by one square perpendicular to that direction, or vice versa, in an "L" shape).  Both the source and destination squares will be an integer between 0 and 63, inclusive, and are numbered like the example chessboard below:
 
+My thoughts: 
+Knight moves changes square horizontal: 6 or 10
+Knight moves over vertical: 17 both ways 
+Find the difference between the two squares and see how many combinations are needed to get there
+
 -------------------------
 | 0| 1| 2| 3| 4| 5| 6| 7|
 -------------------------
