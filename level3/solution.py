@@ -18,7 +18,7 @@ dest = int(input('dest'))
 
 
 # print(str(solution(src, dest)))
-
+## https://docs.python.org/3/library/heapq.html
 import heapq
 from collections import defaultdict
 
@@ -55,7 +55,7 @@ class Board():
     ## Ternary, checks if x, is greater than 0 and less than the limits
     def valid(self, x, y):
         return True if x>= 0 < self.size and y >= 0 < self.size else False
-     
+    ## https://favtutor.com/blogs/breadth-first-search-python
     def distance(self, start, end):
         ## Finding the shortest distance using Breadth-First search
         queue = []
